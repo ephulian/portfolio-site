@@ -1,0 +1,21 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    max-width: 1175px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

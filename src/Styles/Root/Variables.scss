@@ -1,0 +1,36 @@
+$primaryFont: 'Lato', sans-serif;
+$titleFont: 'Orbitron', sans-serif;
+
+$primaryColor: rgb(23, 23, 23);
+$secondaryColor: rgb(68, 68, 68);
+$highlightColor: rgb(218, 0, 55);
+$white: rgb(255, 255, 255);
+
+$fontsize__title: 72px;
+$fontsize__s: 24px;
+$fontsize__m: 30px;
+$fontsize__l: 36px;
+$fontsize__xl: 72px;
+
+$fontsize__mobile__title: 36px;
+$fontsize__mobile__s: 12px;
+$fontsize__mobile__m: 14px;
+$fontsize__mobile__l: 18px;
+$fontsize__mobile__xl: 24px;
+
+$fontweight_light: 300;
+$fontweight_regular: 400;
+$fontweight_bold: 700;
+$fontweight_title: 900;
+
+$transition: all 0.3s linear;
+$radius__s: 25px;
+$radius__l: 45px;
+
+@mixin somethingStyle {
+	font-size: 1rem;
+}
+
+@mixin somethingStyle($size) {
+	font-size: $size;
+}

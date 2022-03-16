@@ -1,0 +1,87 @@
+@import './Variables.scss';
+@import './CSSReset.scss';
+
+body {
+	font-family: $primaryFont;
+	color: $secondaryColor;
+}
+
+h1 {
+	font-family: $titleFont;
+	font-size: $fontsize__mobile__title;
+}
+
+h2 {
+	font-size: $fontsize__mobile__xl;
+}
+
+h3 {
+	font-size: $fontsize__mobile__l;
+}
+
+h4 {
+	font-size: $fontsize__mobile__m;
+}
+
+p {
+	font-size: $fontsize__mobile__s;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: $fontsize__title;
+	}
+
+	h2 {
+		font-size: $fontsize__m;
+	}
+
+	h3 {
+		font-size: $fontsize__l;
+	}
+
+	h4 {
+		font-size: $fontsize__s;
+	}
+
+	p {
+		font-size: $fontsize__s;
+	}
+}
+
+.highlight {
+	color: $highlightColor;
+}
+
+.fw-light {
+	font-weight: $fontweight_light;
+}
+
+.fw-regular {
+	font-weight: $fontweight_regular;
+}
+
+.fw-bold {
+	font-weight: $fontweight_bold;
+}
+
+.fw-title {
+	font-weight: $fontweight_title;
+}
+
+.section-center {
+	max-width: 1175px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.section-center {
+		padding: 0 5rem;
+	}
+}
+
+.class {
+	font-size: 150px;
+	color: blue;
+}

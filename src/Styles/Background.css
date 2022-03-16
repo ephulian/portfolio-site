@@ -1,0 +1,77 @@
+.backgrounds {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+}
+
+.top {
+  max-height: 700px;
+}
+
+.white-gradient {
+  width: 100%;
+  height: 318px;
+  -webkit-transform: translateY(-95%);
+          transform: translateY(-95%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(40.63%, rgba(242, 242, 242, 0.776042)), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(360deg, #ffffff 0%, rgba(242, 242, 242, 0.776042) 40.63%, rgba(196, 196, 196, 0) 100%);
+}
+
+.white-gradient-flipped {
+  width: 100%;
+  height: 318px;
+  -webkit-transform: translateY(95%);
+          transform: translateY(95%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(40.63%, rgba(242, 242, 242, 0.776042)), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(180deg, #ffffff 0%, rgba(242, 242, 242, 0.776042) 40.63%, rgba(196, 196, 196, 0) 100%);
+  z-index: 1;
+  position: relative;
+}
+
+.mid-top {
+  height: 1740px;
+  z-index: -2;
+}
+
+.mid-bottom {
+  height: 2390px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  z-index: -2;
+}
+
+.flipped {
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+}
+
+.white {
+  height: 1350px;
+}
+
+@media screen and (min-width: 768px) {
+  .top {
+    max-height: 1200px;
+  }
+  .white-gradient {
+    height: 600px;
+  }
+  .white-gradient-flipped {
+    height: 600px;
+  }
+  .white {
+    height: 550px;
+  }
+  .mid-top {
+    height: 2580px;
+  }
+  .mid-bottom {
+    height: 4580px;
+  }
+}
+/*# sourceMappingURL=Background.css.map */
