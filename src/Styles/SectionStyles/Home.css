@@ -1,0 +1,55 @@
+.home article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 2rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home article p {
+  font-style: italic;
+}
+
+.home article .button {
+  border: 3px solid #da0037;
+  padding: 0.75rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 768px) {
+  .home article {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+  }
+  .home article p {
+    max-width: 50ch;
+    font-size: 30px;
+    cursor: default;
+  }
+  .home article .button {
+    padding: 1rem;
+  }
+  .home article .button h4 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .home article .button:hover {
+    background-color: #da0037;
+    color: white;
+    cursor: default;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

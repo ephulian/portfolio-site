@@ -1,0 +1,188 @@
+.about-me {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.about-me .photo {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .photo .photo-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-me .photo .photo-container img {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.about-me .photo .circle {
+  width: 60%;
+  height: 0;
+  padding-bottom: 60%;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-transform: translate(5%, -5%);
+          transform: translate(5%, -5%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  z-index: -1;
+}
+
+.about-me .photo .red {
+  background-color: #da0037;
+  -webkit-transform: translate(-5%, 5%);
+          transform: translate(-5%, 5%);
+}
+
+.about-me .photo .black {
+  background-color: #444444;
+}
+
+.about-me .info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .info .single-info-section {
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 30ch;
+}
+
+.about-me .info .single-info-section img {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.about-me .info .single-info-section h3 {
+  padding-bottom: 20px;
+}
+
+.about-me .info .single-info-section ul {
+  text-align: start;
+  list-style-type: disc;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    padding-bottom: 15rem;
+  }
+  .about-me .section-title {
+    grid-column: auto / span 2;
+    padding-bottom: 6rem;
+  }
+  .about-me .info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    width: auto;
+  }
+  .about-me .info .single-info-section {
+    width: 1000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+    max-width: none;
+    text-align: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .about-me .info .single-info-section ul {
+    padding-left: 1.25rem;
+  }
+  .about-me .info .single-info-section img {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1 / span 4;
+    height: 4rem;
+    padding-right: 6rem;
+  }
+  .about-me .info .single-info-section h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2 / span 3;
+    font-size: 30px;
+  }
+  .about-me .info .single-info-section p {
+    max-width: 40ch;
+  }
+  .about-me .photo {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me .photo .photo-container {
+    width: 60%;
+  }
+  .about-me .photo .circle {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+  .about-me .photo:hover .red {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .about-me .photo:hover .black {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .about-me .photo:hover img {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    border-radius: 50%;
+  }
+}
+/*# sourceMappingURL=AboutMe.css.map */

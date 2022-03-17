@@ -1,0 +1,47 @@
+@import '../../Styles/Root/Variables.scss';
+
+.home {
+	article {
+		display: flex;
+		height: calc(100vh - 2rem);
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		// border: 2px solid red;
+
+		p {
+			font-style: italic;
+		}
+
+		.button {
+			border: 3px solid $highlightColor;
+			padding: 0.75rem;
+			transition: $transition;
+		}
+
+		@media screen and (min-width: 768px) {
+			align-items: flex-start;
+			text-align: start;
+
+			p {
+				max-width: 50ch;
+				font-size: 30px;
+				cursor: default;
+			}
+
+			.button {
+				h4 {
+					font-size: $fontsize__s;
+					letter-spacing: 1px;
+				}
+				padding: 1rem;
+				&:hover {
+					background-color: $highlightColor;
+					color: $white;
+					cursor: default;
+				}
+			}
+		}
+	}
+}

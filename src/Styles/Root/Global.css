@@ -86,11 +86,13 @@ meter {
 body {
   font-family: "Lato", sans-serif;
   color: #444444;
+  width: 100%;
 }
 
 h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 36px;
+  letter-spacing: 7px;
 }
 
 h2 {
@@ -106,7 +108,11 @@ h4 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+ul {
+  font-size: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,10 +131,18 @@ p {
   p {
     font-size: 24px;
   }
+  ul {
+    font-size: 24px;
+  }
 }
 
 .highlight {
   color: #da0037;
+}
+
+.highlight-icon {
+  -webkit-filter: invert(8%) sepia(78%) saturate(6869%) hue-rotate(334deg) brightness(123%) contrast(120%);
+          filter: invert(8%) sepia(78%) saturate(6869%) hue-rotate(334deg) brightness(123%) contrast(120%);
 }
 
 .fw-light {
@@ -148,19 +162,38 @@ p {
 }
 
 .section-center {
-  max-width: 1175px;
+  max-width: 1900px;
   margin: 0 auto;
   padding: 0 1rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 35ch;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.section-title h4 {
+  padding-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .section-center {
     padding: 0 5rem;
   }
-}
-
-.class {
-  font-size: 150px;
-  color: blue;
+  .section-title {
+    text-align: center;
+    max-width: 58ch;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+  .section-title h4 {
+    padding-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=Global.css.map */

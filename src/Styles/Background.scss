@@ -10,7 +10,8 @@
 }
 
 .top {
-	max-height: 700px;
+	max-height: 1000px;
+	height: 140vh;
 }
 
 .white-gradient {
@@ -18,7 +19,7 @@
 	height: 318px;
 	// border: 2px solid red;
 	// transform: rotate(180deg);
-	transform: translateY(-95%);
+	transform: translateY(-85%);
 	background: linear-gradient(
 		360deg,
 		#ffffff 0%,
@@ -60,7 +61,7 @@
 }
 
 .white {
-	height: 1350px;
+	height: 100px;
 }
 
 @media screen and (min-width: 768px) {

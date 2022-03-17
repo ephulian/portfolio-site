@@ -1,0 +1,38 @@
+.background-logos {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+}
+
+.background-logos img {
+  opacity: 0.15;
+  max-width: none;
+}
+
+.background-logos .logo-1 {
+  width: 150vw;
+  position: relative;
+  top: -130vw;
+  left: -28vw;
+}
+
+.background-logos .logo-2 {
+  width: 130vw;
+  -webkit-transform: translate(37%, -124%);
+          transform: translate(37%, -124%);
+}
+
+@media screen and (min-width: 768px) {
+  .background-logos .logo-1 {
+    width: 85vw;
+    top: -44vw;
+    left: 38vw;
+  }
+  .background-logos .logo-2 {
+    width: 40vw;
+    -webkit-transform: translate(200%, -132%);
+            transform: translate(200%, -132%);
+  }
+}
+/*# sourceMappingURL=BackgroundLogo.css.map */

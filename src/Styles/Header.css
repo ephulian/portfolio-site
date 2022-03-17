@@ -5,6 +5,9 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 1rem;
+  position: relative;
+  z-index: 3;
+  cursor: default;
 }
 
 @media screen and (min-width: 768px) {
@@ -12,10 +15,19 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    gap: 5rem;
+    gap: 8rem;
     padding-right: 5rem;
     padding-top: 3rem;
-    max-width: 1175px;
+    max-width: 1900px;
+  }
+  header h4 {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  header h4:hover {
+    color: #444444;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
   }
 }
 /*# sourceMappingURL=Header.css.map */

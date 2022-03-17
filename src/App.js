@@ -7,11 +7,13 @@ import AboutMe from './Components/Sections/AboutMe';
 import Projects from './Components/Sections/Projects';
 import Footer from './Components/Footer';
 import Background from './Components/Background';
+import BackgroundLogo from './Components/BackgroundLogo';
 
 function App() {
 	return (
 		<>
 			<Background />
+			<BackgroundLogo />
 			<Header />
 			<Main>
 				<Home />

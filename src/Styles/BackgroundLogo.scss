@@ -1,0 +1,38 @@
+.background-logos {
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	width: 100%;
+
+	img {
+		opacity: 0.15;
+		max-width: none;
+	}
+
+	.logo-1 {
+		width: 150vw;
+		position: relative;
+		top: -130vw;
+		left: -28vw;
+		// max-width: 550px;
+	}
+
+	.logo-2 {
+		width: 130vw;
+		transform: translate(37%, -124%);
+		// display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		.logo-1 {
+			width: 85vw;
+			top: -44vw;
+			left: 38vw;
+		}
+
+		.logo-2 {
+			width: 40vw;
+			transform: translate(200%, -132%);
+		}
+	}
+}
